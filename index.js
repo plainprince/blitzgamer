@@ -1,7 +1,7 @@
 const childProcess = require("child_process");
 const fs = require("fs")
 
-fs.writeFile("eula.txt", "eula=true", (error) => {
+fs.writeFile("./server/eula.txt", "eula=true", (error) => {
     if (error) {
         throw new Error(error)
     }
